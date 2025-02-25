@@ -3,7 +3,7 @@ import pandas as pd
 
 # 读取映射表
 mapping_file = r"\path\mapping.xlsx"  # 你的映射文件
-folder_path = r"your_folder_path"  # 文件夹所在目录
+folder_path = r"\path\your_folder_path"  # 文件夹所在目录
 
 # 读取 CSV 文件
 df = pd.read_excel(mapping_file, dtype=str)  # 读取为字符串，防止数字格式化问题
