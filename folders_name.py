@@ -1,7 +1,7 @@
 import os
 import pandas as pd
 
-path = r'C:\Users\carrot\Downloads\空调'
+path = r'C:\Users\carrot\Downloads\folder'
 if not os.path.exists(path):
 	raise FileNotFoundError(f"目录不存在: {path}")
 
@@ -13,5 +13,5 @@ data = {
 }
 
 df = pd.DataFrame(dict([(k, pd.Series(v)) for k, v in data.items()]))
-output_path = r'C:\Users\carrot\Downloads\空调\output.xlsx'
+output_path = r'C:\Users\carrot\Downloads\folder\output.xlsx'
 df.to_excel(output_path, index=False)
