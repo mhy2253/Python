@@ -13,3 +13,7 @@ with open(output_file, "w", encoding="utf-8") as f:
             result = f"文件夹 '{folder}' 内有 {image_count} 张图片\n"
             print(result, end="")  # 终端输出
             f.write(result)  # 写入文件
+            
+            
+            
+            
